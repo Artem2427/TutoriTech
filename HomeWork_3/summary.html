@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="shortcut icon" href="./img/icon5.png" type="image/png">
+</head>
+
+<body>
+	<style>
+		span {
+			cursor: pointer;
+		}
+
+		.form div {
+			padding-bottom: 10px;
+		}
+	</style>
+	<header>
+		<nav>
+			<a href="index.html">Главная</a>
+			<a href="blog-site.html">Блог компании</a>
+			<a href="article.html">Статья</a>
+			<a href="video-gallery.html">Видеогалерея</a>
+			<a href="summary.html">Отправить резюме</a>
+		</nav>
+	</header>
+	<div class="line">
+		<p>
+			<a href="index.html">Главная</a>><a href="blog-site.html">Блог компании</a>><a
+				href="article.html">Статья</a>><a href="video-gallery.html">Видеогалерея</a>><a
+				href="summary.html">Отправить резюме</a>
+		</p>
+	</div>
+	<div class="form">
+		<form action="" method="GET">
+			<div>
+				<label for="name">
+					<span>Имя и фамилия:</span>
+				</label>
+				<input type="text" name="name" autocomplete="off" id="name" tabindex="1" required>
+			</div>
+			<div>
+				<label for="age">
+					<span>Возраст:</span>
+				</label>
+				<input type="number" name="age" autocomplete="off" id="age" tabindex="2" required>
+			</div>
+			<div>
+				<label for="education">
+					<span>Образование:</span>
+				</label>
+				<select name="education" id="education" tabindex="3" required>
+					<option value="no">Нет</option>
+					<option value="middle">Среднее</option>
+					<option value="middle-special">Средне-специальное</option>
+					<option value="no-higher">Неоконченое высшее</option>
+					<option value="higher">Высшее</option>
+					<option value="two-higher">Два высших и более</option>
+				</select>
+			</div>
+			<div>
+				<p>Семейное положение:</p>
+				<div>
+					<span>Женат(Замужем)</span>
+					<input type="radio" name="position" value="married" tabindex="4">
+				</div>
+				<div>
+					<span>Свободен(на)</span>
+					<input type="radio" name="position-1" value="unmarried" tabindex="4">
+				</div>
+			</div>
+			<div>
+				<p>Языки</p>
+				<p>
+					<input type="checkbox" id="ru" name="Russian" checked tabindex="5">
+					<label for="ru">
+						<span>Руский</span>
+					</label>
+				</p>
+				<p>
+					<input type="checkbox" id="fr" name="French" tabindex="6">
+					<label for="fr">
+						<span>Французский</span>
+					</label>
+				</p>
+				<p>
+					<input type="checkbox" id="ge" name="German" tabindex="7">
+					<label for="ge">
+						<span>Немецкий</span>
+					</label>
+				</p>
+				<p>
+					<input type="checkbox" id="en" name="English" tabindex="8">
+					<label for="en">
+						<span>Англиский</span>
+					</label>
+				</p>
+				<p>
+					<input type="checkbox" id="ar" name="Arab" tabindex="9">
+					<label for="ar">
+						<span>Арабский</span>
+					</label>
+				</p>
+			</div>
+			<div>
+				<label for="num">
+					<span>Опыт работы в месяцах:</span>
+				</label>
+				<input type="number" name="num" id="num" autocomplete="off" max="360" min="0" tabindex="10">
+			</div>
+			<div>
+				<textarea name="experience" placeholder="Места работы" tabindex="11"></textarea>
+			</div>
+			<div>
+				<p>О себе</p>
+				<textarea name="yourself" tabindex="12"></textarea>
+			</div>
+			<p>Водительские права:</p>
+			<div>
+				<span>Да</span>
+				<input type="radio" name="rights-1" value="yes" tabindex="13">
+				<span>Нет</span>
+				<input type="radio" name="rights-2" value="not" tabindex="13">
+			</div>
+			<div>
+				<label for="email">
+					<span>Адрес електронной почты</span>
+				</label>
+				<input type="email" name="email" autocomplete="off" id="email" tabindex="14" required>
+			</div>
+			<button type="submit">Отправить</button>
+		</form>
+	</div>
+</body>
+
+</html>
